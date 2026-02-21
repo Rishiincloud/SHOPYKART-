@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Login</title>
+    <script>
+        function validateEmail() {
+            const email = document.getElementById("email").value;
+            if (email === "Rishijishu12345@gmail.com") {
+                alert("Login successful!");
+                // Logic for successful login can be added here
+            } else {
+                alert("Invalid email. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Owner Login</h1>
+    <form onsubmit="event.preventDefault(); validateEmail();">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
