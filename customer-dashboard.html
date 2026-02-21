@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Shopping Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Shopping Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Browse Products</a></li>
+                <li><a href="#cart">My Cart</a></li>
+                <li><a href="#orders">My Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product-list">
+                <!-- Products will be dynamically added here -->
+                <div class="product" data-id="1">
+                    <h3>Product Name 1</h3>
+                    <p>Description of Product 1</p>
+                    <p>Price: $10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2">
+                    <h3>Product Name 2</h3>
+                    <p>Description of Product 2</p>
+                    <p>Price: $20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- More products can be added here -->
+            </div>
+        </section>
+        <section id="cart">
+            <h2>My Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <p>Total: $0.00</p>
+            <button class="place-order">Place Order</button>
+        </section>
+        <section id="orders">
+            <h2>My Orders</h2>
+            <div class="order-list">
+                <!-- Orders will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Shopping Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
